@@ -1,0 +1,38 @@
+@import "src/colors.scss";
+
+.header-title {
+  color: $asb-yellow;
+  text-align: center;
+
+  @media only screen and (max-width: 600px) {
+    position: absolute;
+    right: 20px;
+  }
+}
+
+.header-menu {
+  .ant-menu {
+    border-right: none;
+
+    .ant-menu-item {
+      padding: 0;
+    }
+  }
+}
+
+.header-menuButton {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 25px;
+}
+
+.header-menuClose {
+  float: right;
+  margin-top: 3px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
