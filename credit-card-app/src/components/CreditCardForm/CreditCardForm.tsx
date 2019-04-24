@@ -92,7 +92,7 @@ class CreditCardForm extends Component<Props, State> {
               validateTrigger: this.state.submitClicked
                 ? "onChange"
                 : "onSubmit"
-            })(<Input placeholder="12/34" maxLength={5} />)}
+            })(<Input placeholder="MM/YY" maxLength={5} />)}
           </Form.Item>
         </div>
         <Form.Item>
