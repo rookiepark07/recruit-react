@@ -1,7 +1,7 @@
-export function formatCardNumber(input: string) {
-  var cardNumber = input.replace(/\D/g, "");
+export const formatCardNumber = (input: string) => {
+  let cardNumber = input.replace(/\D/g, "");
 
-  var parts = [];
+  let parts = [];
   for (let i = 0; i < cardNumber.length; i += 4) {
     parts.push(cardNumber.substring(i, i + 4));
   }
@@ -11,11 +11,11 @@ export function formatCardNumber(input: string) {
   return cardNumber;
 }
 
-export function formatCvc(input: string) {
+export const formatCvc = (input: string) => {
   return input.replace(/\D/g, "");
 }
 
-export function formatCardExpiryDate(input: string) {
+export const formatCardExpiryDate = (input: string) => {
   return input
     .replace(
       /^([1-9]\/|[2-9])$/g,
